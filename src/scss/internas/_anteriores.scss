@@ -1,0 +1,62 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.reciente{
+    display: inline-block;
+    margin: 0;
+
+}
+.alineacion{
+    // border: solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // align-content: center;
+}
+.no-fijo{
+    position: initial;
+}
+
+.tabla{
+    border: solid 1px v.$gris;
+    // border-radius: 1rem;
+    // box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.6);
+
+    border-collapse: collapse;
+    width: 100%;
+    th, td {
+        border: 1px solid v.$gris;
+        padding: 2rem 0;
+        text-align: center;
+    }
+    th{
+        background-color: v.$verde;
+        color: v.$blanco;
+        font-size: 1.5rem;
+        padding: 2rem 0;
+    }
+    td{
+        color: v.$negro;
+        // font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+
+    @include m.tablet{
+        th, td {
+            padding: 2rem;
+        }
+        th{
+            background-color: v.$verde;
+            color: v.$blanco;
+            font-size: 2rem;
+        }
+        td{
+            // font-weight: bold;
+            font-size: initial;
+        }
+
+    }
+
+
+}

@@ -1,0 +1,21 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header{
+    background-color: v.$verde;
+    // height: 30rem;
+
+    // @include m.tablet{
+
+    //     position: fixed;
+    //     width: 100%;
+    //     top: 0;
+    //     left: 0;
+    // }
+}
+
+.contenido-header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
